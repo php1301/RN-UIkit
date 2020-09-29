@@ -23,7 +23,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@shyn/rn-uikit",
+  "name": "@shyn123/rn-uikit",
   "author": "Shyn",
   "dependencies": {
     "react-hook-form": "^6.8.6",
@@ -35,8 +35,5 @@
     "react-dom": "^16.13.1",
     "react-native": "^0.63.2",
     "typescript": "^4.0.3"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
