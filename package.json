@@ -1,0 +1,42 @@
+{
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.63.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@shyn/rn-uikit",
+  "author": "Shyn",
+  "dependencies": {
+    "react-hook-form": "^6.8.6",
+    "react-native-paper": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.63.23",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.63.2",
+    "typescript": "^4.0.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
