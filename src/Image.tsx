@@ -4,10 +4,16 @@ import {
   styleFlexBox,
   styleSpace,
   styleShadow,
-  StyleSpaceProps,, StyleFlexBoxProps, StyleShadowProps
+  StyleSpaceProps,
+  StyleFlexBoxProps,
+  StyleShadowProps,
 } from './helpers';
 
-interface Props extends ImageProps, StyleSpaceProps, StyleFlexBoxProps, StyleShadowProps {}
+interface Props
+  extends ImageProps,
+    StyleSpaceProps,
+    StyleFlexBoxProps,
+    StyleShadowProps {}
 
 const Image: FC<Props> = ({ style, ...props }) => {
   const blockStyles = [
