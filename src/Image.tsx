@@ -7,7 +7,8 @@ import {
   styleShadow,
   StyleSpaceProps,
   StyleFlexBoxProps,
-  StyleShadowProps,, StyleSizeProps
+  StyleShadowProps,
+  StyleSizeProps,
 } from './helpers';
 
 interface Props
