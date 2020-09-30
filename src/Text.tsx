@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import * as React from 'react';
 import { Text as RnText, TextProps } from 'react-native';
 import {
   styleFlexBox,
@@ -16,7 +16,7 @@ interface TextType extends StyleSpaceProps, StyleFlexBoxProps, TextProps {
   txtAlign?: 'auto' | 'left' | 'right' | 'center' | 'justify';
 }
 
-const Text: FC<TextType> = ({
+const Text: React.FC<TextType> = ({
   color,
   style,
   bold,

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import * as React from 'react';
 import { View, ViewProps } from 'react-native';
 import {
   styleFlexBox,
@@ -30,7 +30,7 @@ interface BoxProps
   as?: any;
 }
 
-const Box: FC<BoxProps> = ({ circle, style, bg, as, ...props }) => {
+const Box: React.FC<BoxProps> = ({ circle, style, bg, as, ...props }) => {
   const blockStyles = [
     [...styleSpace(props)],
     [...styleFlexBox(props)],
