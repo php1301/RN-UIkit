@@ -8,3 +8,4 @@ export { default as Hamburger } from './Hamburger';
 export { default as FadeIn } from './FadeIn';
 export { default as FAB } from './FAB';
 export { default as Button } from './Button';
+export { default as Image } from './Image';
