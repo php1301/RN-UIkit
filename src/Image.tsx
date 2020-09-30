@@ -3,20 +3,23 @@ import { Image as NativeImage, ImageProps } from 'react-native';
 import {
   styleFlexBox,
   styleSpace,
+  styleSize,
   styleShadow,
   StyleSpaceProps,
   StyleFlexBoxProps,
-  StyleShadowProps,
+  StyleShadowProps,, StyleSizeProps
 } from './helpers';
 
 interface Props
   extends ImageProps,
     StyleSpaceProps,
     StyleFlexBoxProps,
+    StyleSizeProps,
     StyleShadowProps {}
 
 const Image: FC<Props> = ({ style, ...props }) => {
   const blockStyles = [
+    [...styleSize(props)],
     [...styleSpace(props)],
     [...styleFlexBox(props)],
     [...styleShadow(props)],
