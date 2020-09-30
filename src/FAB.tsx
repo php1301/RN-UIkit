@@ -32,8 +32,10 @@ const FAB: React.FC<FABProps> = ({ bg, ...props }) => {
     bg && { backgroundColor: bg },
     props.style,
   ];
+  // @ts-ignore
   const contentStyle = [[styleSize(props), props.contentStyle]];
   return (
+    // @ts-ignore
     <PaperFAB {...props} style={style} contentStyle={contentStyle}>
       {props.children}
     </PaperFAB>

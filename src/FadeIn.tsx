@@ -13,6 +13,7 @@ const FadeIn: FC<Props> = ({ children, duration }) => {
     Animated.timing(fadeAnim, {
       toValue: 1,
       duration: duration,
+      useNativeDriver: true,
     }).start();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fadeAnim]);

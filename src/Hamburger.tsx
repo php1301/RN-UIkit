@@ -3,7 +3,12 @@ import * as React from 'react';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-const Humberger = ({ size, color }) => {
+interface Props {
+  size?: number;
+  color?: string;
+}
+
+const Humberger: React.FC<Props> = ({ size, color }) => {
   return (
     <Box
       w={size}
@@ -18,6 +23,11 @@ const Humberger = ({ size, color }) => {
       <Icon name="format-align-justify" color={color} size={30} />
     </Box>
   );
+};
+
+Humberger.defaultProps = {
+  size: 30,
+  color: 'blue',
 };
 
 export default Humberger;

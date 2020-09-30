@@ -27,6 +27,7 @@ const Button: React.FC<ButtonProps> = (props) => {
   ];
   const contentStyle = [[styleSize(props), props.contentStyle]];
   return (
+    // @ts-ignore
     <PaperButton {...props} style={style} contentStyle={contentStyle}>
       {props.children}
     </PaperButton>

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@types/react-native": "^0.63.23",
+    "@types/react-native-vector-icons": "^6.4.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-native": "^0.63.2",

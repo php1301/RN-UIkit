@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import * as React from 'react';
-import { Animated, Easing, StyleSheet, View } from 'react-native';
+import { Animated, Easing, StyleSheet, View, ViewProps } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   styleBorder,
@@ -58,6 +58,7 @@ export default function Skeleton({
     style,
   ];
   return (
+    // @ts-ignore
     <View style={blockStyles}>
       <Animated.View
         style={[
